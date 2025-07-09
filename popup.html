@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="card">
+      <h2 class="title">🌤️ Weather Now</h2>
+
+      <button id="getWeatherBtn" class="refresh-btn">Get Current Weather</button>
+
+      <div class="units">
+        <button id="celsiusBtn" class="unit-btn active">°C</button>
+        <button id="fahrenheitBtn" class="unit-btn">°F</button>
+      </div>
+
+      <div id="weatherCard" class="weather-content" style="display: none;">
+        <img id="weatherIcon" src="icons/sunny.png" alt="Weather Icon" class="weather-icon" />
+        <div class="temperature" id="temperature">--°C</div>
+        <div class="city" id="location">--</div>
+
+        <div class="details">
+          <div class="detail-item">
+            <img src="icons/humidity.png" class="detail-icon" alt="Humidity" />
+            <span id="humidity">--%</span>
+            <span class="label">Humidity</span>
+          </div>
+          <div class="detail-item">
+            <img src="icons/wind.png" class="detail-icon" alt="Wind" />
+            <span id="windSpeed">-- km/h</span>
+            <span class="label">Wind Speed</span>
+          </div>
+        </div>
+
+        <div class="condition" id="condition"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
